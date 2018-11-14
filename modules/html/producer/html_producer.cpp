@@ -459,6 +459,7 @@ public:
 
 			CefBrowserSettings browser_settings;
 			browser_settings.web_security = cef_state_t::STATE_DISABLED;
+			browser_settings.universal_access_from_file_urls = cef_state_t::STATE_ENABLED;
 			CefBrowserHost::CreateBrowser(window_info, client_.get(), url, browser_settings, nullptr);
 		});
 	}
